@@ -127,20 +127,62 @@
       </td>
       <td>Jan 2018 - Dec 2019</td>
     </tr>
-    <tr>
+    <tfoot>
       <td colspan="5">
 <p><b>Total Experience: 5 Years</b></p>
-      </td>
-    </tr>
+    </td>
+    </tfoot>
   </table>
 <br>
 <br>
 <br>
 
 <h3 style="color:blue;">Contact Me</h3>
-<p>Please feel free to reach out</p>
+<p>Please feel free to reach out using the form below.</p>
 <br>
-<form action="">
+<form>
+  <fieldset>
+    <legend>Personal Information</legend>
+    <table width="100%">
+      <tr>
+        <td>
+      <label for="userFirstName">First Name:
+        <input type="text" name="firstName" id="userFirstName" required>
+      </label>
+        </td>
+      <td>
+      <label for="userLastName">Last Name:
+        <input type="text" name="lastName" id="userLastName" required>
+      </label>
+        </td>
+      </tr>
+       <tr>
+        <td>
+      <label for="userPhoneNumber">Phone Number:
+        <input type="tel" name="phoneNumber" id="userPhoneNumber">
+      </label>
+        </td>
+      <td>
+      <label for="userEmail">Email Address:
+        <input type="email" name="email" id="userEmail" required>
+      </label>
+        </td>
+      </tr>
+      <tr >
+        <td>
+  <label for="meetingDate">Preferred Meeting Date:
+    <input type="date" name="meetingDate" id="meetingDate">
+  </label>
+        </td>
+        <td>
+  <label for="meetingTime">Best Time to Contact:
+    <input type="time" name="meetingTime" id="meetingTime">
+  </label>
+        </td>
+      </tr>
+    </table>
+   </fieldset>
+   <button type="submit">Submit</button>
 
 </form>
   </body>
