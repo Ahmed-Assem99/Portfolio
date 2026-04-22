@@ -184,8 +184,76 @@
       </tr>
     </table>
    </fieldset>
-   <button type="submit">Submit</button>
-
+  </form>
+  <form>
+    <fieldset>
+      <legend>Project Details</legend>
+      <table width="100%">
+        <tr>
+          <td>
+            <label for="projectType">Project Type:</label>
+            <input type="text" name="projectType" id="projectType" required>
+            
+          </td>
+          <td>
+            <label for="projectDescription">Project Description:</label>
+            <br>
+            <textarea name="projectDescription" id="projectDescription" required></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+           <label>Budget Range:</label>
+           <br>
+             <input type="radio" name="budget" value="<$5000">
+             <label >Under $5000</label>
+             <br>
+             <input type="radio" name="budget" value="$5000-$10000">
+             <label >$5000 - $10000</label>
+             <br>
+             <input type="radio" name="budget" value="$10000-$25000">
+             <label >$10000 - $25000</label>
+             <br>
+             <input type="radio" name="budget" value=">$25000">
+             <label >Over $25000</label>
+             <br>
+            </td>
+            <td>
+              <label >Services Required(Check all that apply): </label>
+              <br>
+              <input type="checkbox" name="skills" value="UI/UX Design">
+              <label >UI/UX Design</label>
+              <br>
+              <input type="checkbox" name="skills" value="Frontend Development">
+              <label>Frontend Development</label>
+              <br>
+              <input type="checkbox" name="skills" value="Backend Development">
+              <label>Backend Development</label>
+              <br>
+              <input type="checkbox" name="skills" value="Hosting & Deployment">
+              <label>Hosting & Deployment</label>
+              <br>
+              <input type="checkbox" name="skills" value="Maintenance & Support">
+              <label>Maintenance & Support</label>
+              <br>
+            </td>
+        </tr>
+        <tr>
+          <td>
+          <label for="reference">How did you hear about me?</label>
+          <select name="reference" id="reference">
+            <option value="" disabled selected>--select source</option>
+            <option>LinkedIn</option>
+            <option >GitHub</option>
+            <option>Wuzzuf</option>
+          
+          </select>
+        </td>
+        </tr>
+      </table>
+    </fieldset>
+  <button type="submit">Send Message</button>
+  <button type ="reset">Clear Form</button>
 </form>
   </body>
 </html>
